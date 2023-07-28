@@ -3,8 +3,10 @@ This is my first website, built with my very own static website generator!
 I'm really excited to be able to use what I've built.
 
 Well, I guess I'll use the rest of this page to tell you a bit
-more about the benefits and exciting parts of my project.
+more about the exciting parts of my project.
  (also maybe a bit about how satisfied I am with it)
+
+You can find the code on my GitHub [right here](https://github.com/haxala1r/site-generator).
 
 # What it does
 From a user standpoint, this project accomplishes three main things:
