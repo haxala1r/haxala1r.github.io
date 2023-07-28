@@ -21,17 +21,17 @@ From a user standpoint, this project accomplishes three main things:
 To get a little more involved with the code, here is how a simple page
 with a blue "Hello world!" text would look in my HTML DSL:
 
-`(html (body (p :attrs (:color "blue") "Hello world!")))`
+`(html (body (p :attrs (:style "color: blue;") "Hello world!")))`
 
 ...which generates:
 
-`<html><body><p color="blue"> Hello world! </p></body></html>`
+`<html><body><p style="color:blue"> Hello world! </p></body></html>`
 
 Well, at first this may not look any different than regular HTML, but this has
 a few advantages that regular HTML doesn't:
 
 - It has no closing tags. Just closing parentheses, like normal Common Lisp code.
-- Perhaps more importantly, you can execute regular code *inside* the HTML-generating code. So `(p (* 5 5))` is equivalent to `(p 25)`. This also means that File and Network I/O can be done, if necessary.
+- Perhaps more importantly, you can execute regular code *inside* the HTML-generating code. So `(p (* 5 5))` is equivalent to `(p 25)`. This also means that File and Network I/O can be done, if necessary. If you have a way of having the site re-generated every time it is viewed, this could effectively make my project a php-replacement (well, not necessarily a *good* one).
 - Conversely, regular Common Lisp code can also make use of this language. So for example, you can make use of my project to type `(print (p (i "hello world!")))` at the repl, and that would print "<p><i>hello world!</i></p>".
 
 The last two points are especially important, because that's the part that lets us
@@ -41,12 +41,12 @@ Essentially, the template is first evaluated as Common Lisp code.
 The template, while being evaluated (or executed, in this context), executes code
 that reads and processes the markdown file. However the code that tokenizes, parses
 and then evaluates the markdown file itself makes use of even more Common Lisp code that
-generates HTML code, which is how we're able to turn (or *compile*) `*text*` into `<i>text</i>`.
+generates HTML code, which is how we're able to turn (or *compile*) `*text*` into `<i>text</i>`,
+then place it in a template where it becomes part of an entire page with proper styling and everything!
 
 It's quite amazing, isn't it?
 
 ## Compiling Markdown
-
 
 The next big component of my project is the Markdown compiler, which tokenizes, then parses
 the input markdown into an appropriate AST.
