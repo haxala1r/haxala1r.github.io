@@ -1,6 +1,6 @@
 # Hello world!
 
-I'm haxala1r, and I really like programming. I *really, **really*** like programming. 
+Hello, I'm Emin, and I really like programming. 
 I also like anime, scifi, books and video games.
 
 I have been learning about various programming topics since about 2019, and I know
@@ -28,3 +28,6 @@ I even had my doubts about some of the stuff here...
 Anyway, that's my introduction page. Hopefully I'll add some other stuff to this site later.
 Like a blog, IDK... and maybe less self-doubt? Oh who am I kidding. There's ***always*** self-doubt,
 *no matter what you do.*
+
+Oh, also, [here's](/hello-world.html) the page where I explain some of my thought process and what I've learnt from the
+static website generator I made to make this site.

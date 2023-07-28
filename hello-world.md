@@ -53,6 +53,7 @@ If you'd like some more details, here's how the transformation goes.
 Sorry if I'm detailing too much here, but I kind of want to show what I learnt here,
 so here we go...
  
+
 - `*hello world*` is taken as input.
 - The tokenizer converts this into a list of tokens, each of which is in fact an ast-node object. For this input, the list of tokens would be:
  - First, an ast-node containing "*" as its value (because `*` is a token), and `'STAR` as its type.
