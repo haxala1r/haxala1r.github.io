@@ -11,8 +11,8 @@ am always open to learning about new programming languages and other technologie
 
 Here are some examples of the kinds of personal projects I've worked on:
 
-- A bot that can play Tetris way better and faster than I (or anyone I know) ever could. (written in C)
-- Lightweight and minimal FTP server. (C)
+- A bot that [can play Tetris](https://github.com/haxala1r/tetris) way better and faster than I (or anyone I know) ever could. (written in C)
+- Lightweight and minimal (arguably incomplete...) [FTP server](https://github.com/haxala1r/ftp-server). (C)
 - A portable sockets library that aims to provide a more consistent interface to sockets across both Windows and Linux (C++).
 - I contributed quite a lot to [my highschool's computer olympiads training repo](https://github.com/melikechan/effl-comp-olympiads) (C)
 - I made an attempt at writing [an entire operating system](https://github.com/haxala1r/nettapus). I say "attempt" because I'm not quite satisfied with where it is right now, and I want to eventually make another attempt at it. (C and make)
